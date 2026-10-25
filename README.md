@@ -55,8 +55,6 @@ GitHub Copilot asistió en la implementación y mantenimiento de la aplicación 
 
 El trabajo se realizó por etapas: planificación, presupuesto mensual, mejora de la navegación, registro y edición de movimientos, indicadores visuales y corrección de errores. Se revisaron sus propuestas y se ajustaron las subdivisiones, el vocabulario, el presupuesto predeterminado y la conservación del historial. Las pruebas incluyen los límites del 80 % y 100 %, saldos negativos menores de un sol y conflictos entre sesiones que comparten almacenamiento.
 
-Codex apoyó la definición de requisitos y prompts, la revisión independiente del código y las pruebas, y la preparación de la documentación y publicación. Las capturas de la interfaz se recopilan en el informe académico local; la implementación de la aplicación se desarrolló con GitHub Copilot.
-
 ## Fuera del alcance
 
 Rentabilidad, valor de mercado, simulaciones y recomendaciones de productos financieros no forman parte del objetivo de esta aplicación.
