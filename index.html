@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f7f2" />
+    <title>Mi Presupuesto</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Mi Presupuesto, inicio">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Mi Presupuesto</span>
+        </a>
+        <p class="header-note">Tus asignaciones mensuales, en un solo lugar.</p>
+      </header>
+
+      <section class="workspace" aria-labelledby="page-title">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">PLANIFICACIÓN MENSUAL</p>
+            <h1 id="page-title">Tu dinero, organizado.</h1>
+            <p class="page-description">Define un monto y distribúyelo según tus prioridades.</p>
+          </div>
+          <div class="month-control" aria-label="Selección del mes">
+            <div class="month-navigation">
+              <button id="previous-month" class="month-arrow" type="button" aria-label="Mes anterior">
+                <span aria-hidden="true">←</span>
+              </button>
+              <p id="selected-month" class="selected-month" aria-live="polite"></p>
+              <button id="next-month" class="month-arrow" type="button" aria-label="Mes siguiente">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <button id="go-to-current-month" class="button button-link current-month-button" type="button" hidden>
+              Ir al mes actual
+            </button>
+            <div class="month-selectors">
+              <label class="visually-hidden" for="month-select">Seleccionar mes</label>
+              <select id="month-select"></select>
+              <label class="visually-hidden" for="year-select">Seleccionar año</label>
+              <select id="year-select"></select>
+            </div>
+          </div>
+        </div>
+
+        <p id="app-message" class="app-message" role="status" aria-live="polite" hidden></p>
+        <div id="budget-content" aria-live="polite"></div>
+      </section>
+
+      <footer class="site-footer">
+        <span>Montos en soles peruanos (PEN)</span>
+        <span>La configuración se guarda en este dispositivo.</span>
+      </footer>
+    </main>
+  </body>
+</html>
